@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Pendaftaran</title>
+</head>
+<body>
+
+<style>
+	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+       border-collapse: collapse;
+}
+table, th, td {
+        border: 1px solid white;
+}
+th, td {
+        padding: 10px;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+body {
+	background-color: black;
+	color: whitesmoke;
+	font: normal normal normal 15px/20px arial;
+}
+
+
+.container .header h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font: normal normal bold 30px/25px arial;
+
+}
+
+.container .tabel {
+	font: normal normal normal 15px/20px arial;
+	padding-left: 530px;
+	padding-top: 10px;
+	line-height: 10px;
+}
+
+.container .submit {
+	font: normal normal normal 15px/20px arial;
+	margin-top: 20px;
+	margin-left: 70px;
+	margin-right: 650px;
+	margin-bottom: 50px;
+	line-height: 20px;
+	padding-left: 30px;
+	padding-right:15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 20%;
+
+}
+
+.submit button {
+	background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+
+
+
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.cf {
+    *zoom: 1;
+}
+
+</style>
+
+<div class="container cf">
+	<div class="header">
+		<div style="text-align: center;">
+			<h1>PENDAFTARAN</h1>
+			<h2>LOGIN TO WEBSITE!</h2>
+			<hr>
+			<strong><u>ISI BIODATA DI BAWAH INI</u></strong>
+		</div>
+
+		<div class="tabel">
+		<form action="informasi.html" method="POST">
+			<fieldset>
+					<table>
+						<tr>
+							<td><label for="username">Username :</label></td>
+							<td><input type="text" id="username" name="username" placeholder="&nbsp;Masukkan Username" required></td>
+						</tr>
+						<tr>
+							<td><label for="password">Password :</label></td>
+							<td><input type="password" id="password" name="password" placeholder="&nbsp;Masukkan Password" required></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="radio" id="pria" name="Jenis_Kelamin" value="Pria">
+								<label for="pria">Pria</label>
+								<input type="radio" id="wanita" name="Jenis_Kelamin" value="Wanita">
+								<label for="wanita">Wanita</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<input type="checkbox" id="menyanyi" name="hobi[]" value="Menyanyi">
+								<label for="menyanyi">Menyanyi</label>
+								<input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+								<label for="olahraga">Olahraga</label>
+								<input type="checkbox" id="ngoding" name="hobi[]" value="Ngoding">
+								<label for="ngoding">Ngoding</label>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="kota">Asal Kota</label></td>
+							<td>
+								<select id="kota" name="kota">
+									<option>Bandung</option>
+									<option>Medan</option>
+									<option>Bandar Lampung</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align:center;"><label for="alamat">Alamat</label></td>
+							<td><textarea id="alamat" name="alamat"></textarea></td>
+						</tr>
+					</table>
+
+					<div class="submit">
+		        		<button type="submit">Submit</button>
+					</div>	
+			</fieldset>
+		</form>
+		</div>
+ 	</div>
+</div>
+
+<footer style="text-align: center; padding: 20px; background-color: darkslategray; color: whitesmoke; font-size: 14px;">
+    &copy; 2024 Hagai Kopusi Sinulingga
+</footer>
+
+</body>
+</html>
